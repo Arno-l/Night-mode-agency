@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;600;700;800');
+
+$color-bg: #fff;
+$color-text: black;
+$color-text-card: #fff;
+$color-second: rgb(160, 238, 205);
+$color-third: rgb(26, 18, 102);
+
+
+
+  .card-title.Dark,
+  .card-body.Dark,
+  .navbar.Dark {
+      background: $color-second;
+  }
+
+  p.Dark,
+  h1.Dark,
+  h2.Dark,
+  h3.Dark,
+  h4.Dark,
+  h5.Dark,
+  .result.Dark,
+  .intro.Dark,
+  .nav-link.Dark {
+      color: $color-text;
+  }
+
+  h1.Light,
+  h2.Light,
+  h3.Light,
+  h4.Light,
+  h5.Light,
+  p.Light,
+  .result.Light,
+  .intro.Light,
+  .nav-link.Light {
+      color: $color-bg;
+  }
+
+  .navbar.Light,
+  .element-list.Light,
+  .card-title.Light,
+  .card-body.Light,
+  .main.Light {
+      background: $color-third;
+  }
+
+  
+
+
+
+body {
+    font-family: Ubuntu;
+    background-color: $color-bg;
+    margin: 0;
+    padding: 0;
+    
+}
+
+#root {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.text {
+    text-align: center;
+    font-size: x-large;
+}
+
+.main {
+    margin: 0 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.navbar {
+    display: flex;
+    height: 11vh;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.nav-links {
+    padding: 20px;
+}
+
+.nav-link {
+    padding: 20px;
+    text-decoration: none;
+    color: $color-text;
+    transition: all 0.3s ease-in-out;
+}
+
+.ctn-toggle-btn {
+    margin-top: 10px;
+} 
+
+.btn-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: $color-bg;
+    background-color: $color-text ;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-toggle.goLight {
+    background-color: $color-text;
+    color: $color-bg;
+}
+
+.btn-toggle.goDark {
+    background-color: $color-bg;
+    color: $color-text;
+}
+
+p {
+    text-align: center;
+    margin: 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.element-list {
+    background-color: $color-second;
+    min-width: 20rem;
+    max-width: 20rem;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-title {
+    color: $color-text;
+    font-size: xx-large;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-body {
+    color: $color-text;
+    font-size: medium;
+    transition: all 0.3s ease-in-out;
+}
+
+.link-card {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.result {
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
